@@ -1,0 +1,226 @@
+/*Photo by W O L F  Λ R T: https://www.pexels.com/photo/statue-of-bartolomeu-bueno-da-silva-in-parque-trianon-sao-paulo-14119505/ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2596be;
+    width: 1500px;
+    align-self: center;
+    justify-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+footer {
+    margin-top: 30px;
+    height: 50vh;
+}
+
+header {
+    background: linear-gradient(170deg, #2596be 60%, white 40%);
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.mainTitle {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1200px;
+    margin-bottom: 40px;
+} 
+
+.project {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0, 0.25);
+    width: 15vw;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.git, .direct {
+    border: solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.projectName {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project1Pic {
+    background-color: red;
+}
+
+.project2Pic {
+    background-color: green;
+}
+
+.project3Pic {
+    background-color: blue;
+}
+
+.project4Pic {
+    background-color: purple;
+}
+
+.project5Pic {
+    background-color: grey;
+}
+
+.project6Pic {
+    background-color: orange;
+}
+
+.project1Pic, .project2Pic, .project3Pic, .project4Pic, .project5Pic, .project6Pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+} 
+
+.profile-pic {
+    background-image: url(./pictures/pexels-w-o-l-f-λ-r-t-14119505.jpg);
+    background-size: cover;
+    width: 20vw;
+    height: auto; 
+}
+
+.profile-info {
+    display: grid;
+    flex-direction: column;
+    background-color: white;
+    width: 30vw;
+    height: 15vw;
+    align-self: center;
+    padding: 20px;
+}
+
+.profile-info p, .contact p {
+    font-size: 32px;
+}
+
+.profile-info, .profile-pic {
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+.link-buttons {
+    display: flex;
+    justify-self: flex-end;
+    gap: 10px;
+    margin: 10px;
+}
+
+.profile-pic2 {
+    width: 30vw;
+    height: auto;
+    background-image: url(./pictures/coffee2.jpg);
+    background-size: cover;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content:center;
+    gap: 10vw;
+    font-size: 20px;
+}
+
+main {
+    background-color: white;
+}
+
+@media (max-width: 500px) {
+    html, header, main, footer, .project-container  {
+      width: 100%;
+    }
+
+    header, footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .profile-info {
+        height: fit-content;
+        width: 60vw;
+    }
+
+    .profile-pic {
+        width: 60vw;
+    }
+
+    .profile-pic2 {
+        width: 100vw;
+    }
+
+    .main {
+        height: fit-content;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .project {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 90vw;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
